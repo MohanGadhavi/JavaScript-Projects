@@ -58,13 +58,13 @@ form .equals {
     font-size: 1.8em;
 }
 
-form .result {
+form .display {
     display: flex;
     justify-content: center;
     /* margin: 0px 0px; */
 }
 
-form .result input {
+form .display input {
     flex: 1;
     height: 80px;
     padding: 10px;
@@ -75,4 +75,6 @@ form .result input {
     border-radius: 10px;
     /* background: rgba(255, 255, 255,0.2); */
     box-shadow: inset 4px 4px 1px rgba(0, 0, 0, 0.6), inset -4px -4px 6px rgba(255, 255, 255, 0.0);
+    cursor:initial;
 }
+
