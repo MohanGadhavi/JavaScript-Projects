@@ -9,6 +9,7 @@ btnArray.forEach((button) => {
     if (e.target.value == "=") {
       string = eval(string);
       otpt.value = string;
+      string = '';
       console.log(string);
     } else if (e.target.value == "AC") {
       string = "";

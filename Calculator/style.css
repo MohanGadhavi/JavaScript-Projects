@@ -13,7 +13,7 @@ body {
 .root {
     width: 100%;
     height: 100vh;
-    background-color: rgb(237, 242, 244);
+    background-color: rgb(215, 233, 240);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +25,14 @@ body {
     /* margin: auto; */
     padding: 15px;
     border-radius: 25px;
+    border: 5px solid rgb(23, 24, 36);
     background-color: rgb(43, 45, 66);
+    box-shadow: none;
+    transition: all ease 0.5s;
+}
+.calcBody:hover{
+
+    box-shadow: 10px 10px 0px rgba(78, 80, 110, 0.6);
 }
 
 .btn-parent {
@@ -49,13 +56,28 @@ form input {
     box-shadow: 5px 5px 20px rgb(30, 32, 46), -5px -5px 20px rgb(56, 59, 86);
     cursor: pointer;
 }
-form input:hover{
-    box-shadow: 7px 7px 15px rgb(23, 24, 36, 0.8), -2px -2px 20px rgb(56, 59, 86);    
+form .btn-parent input:hover{
+    background-color: rgb(78, 80, 110);
 }
+
+form .btn-parent .danger{
+    /* color: rgb(227, 105, 120); */
+    background-color: rgb(227, 105, 120, 0.4);
+}
+form .btn-parent .danger:hover{
+    background-color: rgb(227, 105, 120, 0.6);
+}
+
+form .btn-parent .operators{
+    background: rgb(66, 69, 110);
+}
+
 
 form .equals {
     width: 140px;
-    font-size: 1.8em;
+    font-weight: 600;
+    color: rgb(69, 202, 242);
+    background: rgb(66, 69, 110);
 }
 
 form .display {
